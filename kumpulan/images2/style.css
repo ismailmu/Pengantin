@@ -1,0 +1,146 @@
+body {
+	margin:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-stretch:extra-expanded;
+	font-size:11px;
+	color:#555555;
+}
+a { text-decoration:none;color:#CC3300; }
+a:hover { text-decoration:underline;color:#18A5BE;  }
+input, select, textarea, radio,checkbox,radio {
+	font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#555555;
+	background:#eeeeee;
+	border:2px ridge #CCFFCC;
+}
+ul,ol {  margin-left:0px; padding-left:20px; }
+li { text-align:left }
+
+#top { background:#F2A43F;color:#CCFFCC; }
+#conten-top { width:960px;height:30px;line-height:30px; }
+#top-left { width:80px;float:left; }
+#top-right { width:80px;float:right; }
+#top-center { width:800px;background:url(title.jpg) no-repeat left; }
+
+#middle { background:#E78E1A url(list-body.jpg) repeat-x; border-top:1px solid #CCFFCC; }
+#conten-middle { width:960px }
+#middle-left { width:80px;height:434px;float:left;background:url(list-left.jpg) no-repeat right }
+#middle-right { width:80px;height:434px;float:right;background:url(list-right.jpg) no-repeat left }
+#middle-center { width:800px; background:#ffffff; }
+
+#menu-list { background:url(top-list.jpg) no-repeat left;height:9px; }
+#menu {
+	background:url(menu.jpg) top repeat-x;
+	border:1px solid #eeeeee;
+	height:30px;
+	line-height: 30px;
+	font-size:12px;
+	width:800px;
+	margin:auto;
+}
+
+#menu a {
+	height: 31px;
+	padding-right: 24px;
+	padding-left: 22px;
+	background: url(menu-devider.jpg) right top no-repeat;
+	float: right;
+	text-decoration: none;
+	color: #dddddd;
+	text-align: center;
+}
+#menu a:hover { background: url(menu-on.jpg) top repeat-x; color:#0ABFCA; }
+#header {
+	background:url(header.jpg)top right no-repeat #eeeeee;
+	border:1px solid #eeeeee;
+	height:182px;
+	width:800px;
+	margin:auto;
+}
+#body { background:url(body.jpg) top repeat-x; padding:30px 20px 20px 20px; float:inherit; }
+#main-menu {
+	float:left;
+	width:200px;
+}
+#kategori,#messanger {
+	background:url(back-menu.jpg) no-repeat left bottom #EDEDED;
+	border-top:1px solid #d5d5d5; 
+	border-right:1px solid #d5d5d5; 
+	margin-bottom:15px;
+}
+#kategori ul,#messanger ul { list-style-type:none; margin:0px; width:170px; padding:15px 15px 15px 15px }
+#kategori ul li,#messanger ul li { width:170px; height:22px; border-bottom:1px dashed #bbbbbb;}
+#kategori ul #judul-kategori { 
+	width:170px; 
+	height:32px; 
+	background:url(kategori.jpg) no-repeat top; border:none;
+}
+#messanger ul #judul-messanger { 
+	width:170px; 
+	height:32px; 
+	background:url(messanger.jpg) no-repeat top; border:none;
+}
+#kategori ul li a,#messanger ul li a { 
+	height:22px; 
+	display:block; 
+	line-height:22px; 
+	text-decoration:none; 
+	padding:0 0 0 10px; 
+	color:#777777; 
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+#kategori ul li a:hover,#messanger ul li a:hover { color:#F2A43F; }
+/*#messanger ul li a { 
+	height:22px; 
+	display:block; 
+	line-height:22px; 
+	text-decoration:none;
+	color:#777777; 
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}*/
+#contact-support {
+	margin-top:10px; 
+	border-bottom:1px solid #d5d5d5; 
+	border-left:1px solid #d5d5d5; 
+	padding:8px;
+	background:#FFFFFF;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#isi {
+	float:right;
+	width:540px;
+}
+#posting-laris,#posting-baru { clear:both; padding-top:20px; } 
+#footer-list { background:url(footer-list.jpg); height:19px; }
+#footer { background:url(footer.jpg); height:40px; }
+#footer a { text-decoration:none; color:#ccddcc; }
+.kuning { color:#F2A43F; }
+.merah { color:#CC3300; }
+.bkuning { color:#F2A43F;font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; }
+.bmerah { color:#CC3300;font-size:13px;	font-family:Georgia, "Times New Roman", Times, serif; }
+.dimage { 
+	background:url(list-image1.png) no-repeat top left #ffffff;
+	padding-top:11px;
+	padding-left:11px;
+}
+.image {
+	background:url(list-image2.png) no-repeat bottom right #ffffff;
+	padding-bottom:11px;
+	padding-right:11px;
+	border:none;
+}
+.bborder { border-bottom:1px dotted #dddddd; }
+.judul { 
+	padding:6px;
+	padding-left:8px;
+	background:url(list-judul.jpg) repeat-y; 
+	border-top:1px solid #dddddd; 
+	border-bottom:1px solid #dddddd;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#CC3300;
+}

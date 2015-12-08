@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>:: STMIK Sinar Nusantara Surakarta ::</title>
+<script language="javascript" type="text/javascript">
+	function validasi(element,param)
+	{	
+		var nilai = element.value;
+		
+		if(param=='email') {
+			var myPattern = new RegExp ("^[a-zA-Z0-9_]+@[a-zA-Z0-9_]+[.][a-zA-Z.]+$");
+			
+			if(! myPattern.test (nilai)) {
+				alert("Penulisan Email Salah!");
+				
+				element.focus();
+			}
+		}
+		else if(param=='angka') {
+		}
+	}
+	
+	function blank(param) {
+		param.value="";
+	}
+	
+	function valPass(element1,element2) {
+		if(element2.value=='') element2.style.background='#FFFFFF none';
+		else { 
+			if(element2.value==document.getElementById(element1).value) element2.style.background='url(images/ya.png) right no-repeat #bbD7FD'; 
+			else element2.style.background='url(images/tidak.png) right no-repeat #FFcaca'; 
+		}
+	}
+</script>
+<link type="text/css" rel="stylesheet" href="images/style.css" />
+</head>
+<body>
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td height="73" colspan="2" align="right" valign="bottom" background="images/header.jpg" class="gmerah">Sistem Informasi Tugas Akhir dan Skripsi&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="22" colspan="2" background="images/list.jpg" style="border:1px solid #4682b4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="194" align="center" valign="top" style="border-left:1px solid #4682b4;"><form id="form1" name="form1" method="post" action="">
+      <table width="100%" border="0" cellspacing="1" cellpadding="4">
+        <tr>
+          <td width="100%" height="27" bgcolor="#dbeaf5"><a href="index.php" target="_self" class="bbiru">&nbsp;<img src="images/home.png" width="17" height="17" style="border:none" /> Home</a></td>
+        </tr>
+        <tr>
+          <td bgcolor="#dbeaf5" class="bhitam"><a href="?action=konsultasi" target="_self" class="bhitam">&nbsp;<img src="images/icon.png" width="17" height="17" style="border:none" /> Form Konsultasi </a></td>
+        </tr>
+        <tr>
+          <td class="bhitam">&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#dbeaf5" class="bhitam"><a href="?action=logout" target="_self" class="bmerah">&nbsp;<img src="images/logout.png" width="17" height="17" style="border:none" /> Log out </a></td>
+        </tr>
+      </table>
+        </form>
+    </td>
+    <td width="806" align="center" valign="top" style="border-left:1px solid #4682b4;border-right:1px solid #4682b4">{BODY}</td>
+  </tr>
+  <tr>
+    <td height="20" colspan="2" align="left" bgcolor="#4682b4" class="putih">&nbsp;Copyright &copy;2006 STMIK SInar Nusantara. All         rights reserved.</td>
+  </tr>
+</table>
+
+</body>
+</html>

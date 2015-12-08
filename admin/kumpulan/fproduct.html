@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>:: STMIK Sinar Nusantara Surakarta ::</title>
+<link type="text/css" rel="stylesheet" href="images/style.css" />
+</head>
+<body>
+<table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td height="22" colspan="2" background="images/list.jpg" style="border:1px solid #4682b4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="200" align="center" valign="top" style="border-left:1px solid #4682b4;"><table width="100%" border="0" cellspacing="1" cellpadding="4">
+      <tr>
+        <td width="100%" height="27" bgcolor="#dbeaf5"><a href="index.php?act=product" target="_self" class="bbiru" title="Management Product">&nbsp; &gt;&gt; Product </a></td>
+      </tr>
+      <tr>
+        <td height="27" bgcolor="#dbeaf5" class="bhitam"><a href="index.php?act=kategori" target="_self" title="Management Kategori">&nbsp; &gt;&gt; Kategori</a></td>
+      </tr>
+      <tr>
+        <td height="27" bgcolor="#dbeaf5" class="bhitam">&nbsp;<a href="index.php?act=satuan" target="_self" title="Management Satuan">&nbsp;&gt;&gt; Satuan</a></td>
+      </tr>
+      <tr>
+        <td height="27" bgcolor="#dbeaf5" class="bhitam">&nbsp; &gt;&gt; <a href="index.php?act=berita" target="_self" title="Management Berita">Berita</a></td>
+      </tr>
+      <tr>
+        <td height="27" bgcolor="#dbeaf5" class="bhitam">&nbsp;<a href="index.php?act=pembayaran" target="_self" title="Management Pembayaran">&nbsp;&gt;&gt; Pembayaran</a></td>
+      </tr>
+      <tr>
+        <td height="27" bgcolor="#dbeaf5" class="bhitam">&nbsp;<a href="index.php?act=pelanggan" target="_self" title="Management Pelanggan">&nbsp;&gt;&gt; Pelanggan</a></td>
+      </tr>
+      <tr>
+        <td height="27" bgcolor="#dbeaf5" class="bhitam">&nbsp; <a href="index.php?act=pengunjung" target="_self" title="Management Pengunjung">&gt;&gt; Pengunjung</a></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>    </td>
+    <td width="806" align="center" valign="top" style="border-left:1px solid #4682b4;border-right:1px solid #4682b4">
+	<br />
+	<form action="user.php?act=" method="post" name="formbutik" target="_self" id="formbutik">
+	  <table width="455" border="0" align="center" cellpadding="3" cellspacing="1" style="border:1px solid #4682b4;">
+        <tr>
+          <td height="26" colspan="5" align="right" bgcolor="#4682b4" class="bputih">FORM PRODUCT&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="24">&nbsp;</td>
+          <td width="81"><input type="hidden" name="id_product" /></td>
+          <td width="11">&nbsp;</td>
+          <td width="276">&nbsp;</td>
+          <td width="25">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">Nama * </td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">:</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><input name="nama" type="text" id="nama" value="$nama" size="60" maxlength="100" />
+            <div id="errnama" class="merah">$errnama</div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td rowspan="3">&nbsp;</td>
+          <td rowspan="3" align="left" valign="top" style="border-top:1px solid #4682b4">Kategori * </td>
+          <td rowspan="3" align="left" valign="top" style="border-top:1px solid #4682b4">:</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><select name="kategori1" id="kategori1">
+              <option value="0">- Pilih salah satu -</option>
+            </select>          </td>
+          <td rowspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><select name="kategori2" id="kategori2">
+              <option value="0">- Pilih salah satu -</option>
+            </select>          </td>
+          </tr>
+
+        <tr>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><select name="kategori3" id="kategori3">
+              <option value="0">- Pilih salah satu -</option>
+            </select>
+            <div id="errkategori" class="merah">$errkategori</div></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">Harga * </td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">:</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><input name="harga" type="text" id="harga" value="$harga" size="20" maxlength="16" />
+            <div id="errharga" class="merah">$errharga</div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">Satuan * </td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">:</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><select name="satuan" id="satuan">
+              <option value="0">- Pilih salah satu -</option>
+          </select>
+            <div id="errsatuan" class="merah">$errsatuan</div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">Foto * </td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">:</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><input name="foto" type="file" id="foto" size="50" maxlength="100" />
+            <div id="errfoto" class="merah">$errfoto</div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">Keterangan * </td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4">:</td>
+          <td align="left" valign="top" style="border-top:1px solid #4682b4"><textarea name="keterangan" cols="60" rows="5" id="keterangan">$keterangan</textarea>
+            <div id="errketerangan" class="merah">$errketerangan</div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="3" style="border-top:1px solid #4682b4">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="5" align="right" bgcolor="#dbeaf5"><input name="reset" type="reset" id="reset" value="   Reset   " style="background:#FFFFFF" />&nbsp;<input name="Simpan" type="submit" id="Simpan" value=" Simpan " style="background:#FFFFFF" /></td>
+        </tr>
+      </table>
+    </form>	<br />	</td>
+  </tr>
+  <tr>
+    <td height="20" colspan="2" align="left" bgcolor="#4682b4" class="putih">&nbsp;Copyright &copy;2006 STMIK SInar Nusantara. All         rights reserved.</td>
+  </tr>
+</table>
+
+</body>
+</html>
